@@ -3,8 +3,7 @@
 }
 html {
   min-width: 500px;
-  width: 100%;
-  font-family: 'fontawesome';
+  font-family: 'source sans pro';
 }
 header {
   display: flex;
@@ -12,6 +11,11 @@ header {
 }
 header .flower-icon {
   margin-right: 20px;
+}
+header .menu-bar {
+  margin-left: 150px;
+  margin-top: 40px;
+  cursor: pointer;
 }
 .pitch {
   background-color: #bbe5cb;
@@ -28,10 +32,15 @@ header .flower-icon {
 .pitch button {
   width: 150px;
   height: 40px;
-  border: 1px solid #dee7e1;
   border-radius: 8px;
   background-color: #787f84;
   color: #c1f4c9;
+  cursor: pointer;
+  font-size: 16px;
+}
+.pitch button:hover {
+  background-color: #bbe5cb;
+  color: #787f84;
 }
 .flower-img {
   display: flex;
@@ -46,7 +55,45 @@ header .flower-icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid #787f84;
 }
 .top-section h3 {
   justify-content: center;
+}
+.middle-section {
+  height: 250px;
+  padding: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid #787f84;
+}
+.container {
+  background-image: linear-gradient(to bottom right, #787f84, #dee7e1);
+}
+.bottom-section {
+  padding: 10px;
+  margin-top: 20px;
+}
+.bottom-section .bottom-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-section .bottom-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #bbe5cb;
+  color: #787f84;
+  cursor: pointer;
+  font-size: 16px;
+}
+.bottom-section .bottom-btn:hover {
+  background-color: #787f84;
+  color: #c1f4c9;
+}
+footer {
+  border-top: 1px solid #787f84;
+  text-align: center;
+  height: 50px;
 }
