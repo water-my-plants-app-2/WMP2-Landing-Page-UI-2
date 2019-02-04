@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  min-width: 500px;
+  width: 100%;
+  font-family: 'fontawesome';
+}
+header {
+  display: flex;
+  background-color: #dee7e1;
+}
+header .flower-icon {
+  margin-right: 20px;
+}
+.pitch {
+  background-color: #bbe5cb;
+  padding: 5px;
+  text-align: center;
+}
+.pitch h2 {
+  font-size: 42px;
+}
+.pitch .solution {
+  font-size: 24px;
+  margin-top: -11px;
+}
+.pitch button {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #dee7e1;
+  border-radius: 8px;
+  background-color: #787f84;
+  color: #c1f4c9;
+}
+.flower-img {
+  display: flex;
+  justify-content: center;
+}
+.flowers-home {
+  width: 80%;
+  height: 300px;
+}
+.top-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.top-section h3 {
+  justify-content: center;
+}
