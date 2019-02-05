@@ -9,13 +9,37 @@ header {
   display: flex;
   background-color: #dee7e1;
 }
+header nav {
+  display: none;
+}
+@media (min-width: 800px) {
+  header nav {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (min-width: 800px) {
+  header nav a {
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #787f84;
+  }
+}
 header .flower-icon {
   margin-right: 20px;
 }
 header .menu-bar {
-  margin-left: 150px;
-  margin-top: 40px;
+  margin-left: 180px;
+  margin-top: 30px;
   cursor: pointer;
+}
+@media (min-width: 800px) {
+  header .menu-bar {
+    display: none;
+  }
 }
 .pitch {
   background-color: #bbe5cb;
@@ -28,6 +52,12 @@ header .menu-bar {
 .pitch .solution {
   font-size: 24px;
   margin-top: -11px;
+}
+@media (min-width: 800px) {
+  .pitch .detail-pitch {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
 }
 .pitch button {
   width: 150px;
@@ -42,21 +72,27 @@ header .menu-bar {
   background-color: #bbe5cb;
   color: #787f84;
 }
-.flower-img {
-  display: flex;
-  justify-content: center;
+.flower1 {
+  display: none;
 }
-.flowers-home {
-  width: 80%;
-  height: 300px;
+@media (min-width: 800px) {
+  .flower1 {
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+  }
+}
+.flower1 .flower-img {
+  width: 200px;
+  height: 150px;
 }
 .top-section {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 10px;
-  margin-top: 20px;
   border-bottom: 1px solid #787f84;
 }
 .top-section h3 {
@@ -71,13 +107,48 @@ header .menu-bar {
 .container {
   background-image: linear-gradient(to bottom right, #787f84, #dee7e1);
 }
+@media (min-width: 800px) {
+  .bottom-content {
+    width: 50%;
+  }
+}
 .bottom-section {
   padding: 10px;
   margin-top: 20px;
 }
+@media (min-width: 800px) {
+  .bottom-section {
+    height: 300px;
+  }
+}
+.bottom-section .dead-flower {
+  display: none;
+}
+@media (min-width: 800px) {
+  .bottom-section .dead-flower {
+    display: flex;
+    margin-left: 600px;
+    width: 50%;
+    margin-top: -215px;
+  }
+}
+@media (min-width: 800px) {
+  .bottom-section .dead-flower-img {
+    width: 275px;
+    height: 250px;
+  }
+}
 .bottom-section .bottom-buttons {
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 800px) {
+  .bottom-section .bottom-buttons {
+    margin-top: 40px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .bottom-section .bottom-btn {
   width: 150px;
@@ -92,8 +163,68 @@ header .menu-bar {
   background-color: #787f84;
   color: #c1f4c9;
 }
-footer {
+.users {
   border-top: 1px solid #787f84;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.testimonials {
+  height: 400px;
+  padding: 10px;
+}
+@media (min-width: 800px) {
+  .testimonials {
+    display: flex;
+    justify-content: wrap;
+    height: 250px;
+    padding: 10px;
+  }
+}
+.testimonials .users {
+  display: none;
+}
+@media (min-width: 800px) {
+  .testimonials .users {
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+  }
+}
+.testimonials .review {
+  border-bottom: 1px dashed #787f84;
+}
+@media (min-width: 800px) {
+  .testimonials .review {
+    width: 400px;
+    border-bottom: none;
+  }
+}
+footer {
   text-align: center;
   height: 50px;
+}
+body {
+  font-family: 'source sans pro', 'noto sans', sans-serif;
+}
+@media (min-width: 800px) {
+  body {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'source sans pro', 'Noto Sans', sans-serif;
 }

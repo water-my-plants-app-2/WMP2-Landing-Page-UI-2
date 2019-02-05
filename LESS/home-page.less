@@ -15,16 +15,41 @@ html {
   header {
     display: flex;
     background-color: #dee7e1;
-    
+
+      nav {
+        display: none;
+        
+        @media @desktop {
+          width: 70%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        a {
+          @media @desktop {
+            margin: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #787f84;
+          }
+        }
+      
+      }
+  
     
     .flower-icon {
       margin-right: 20px;
     }
 
     .menu-bar {
-      margin-left: 150px;
-      margin-top: 40px;
+      margin-left: 180px;
+      margin-top: 30px;
       cursor: pointer;
+
+        @media @desktop {
+          display: none;
+        }
     }
   }
 
@@ -40,6 +65,13 @@ html {
       .solution {
       font-size: 24px;
       margin-top: -11px;
+      
+    }
+    .detail-pitch {
+      @media @desktop {
+       margin-right: 100px;
+       margin-left: 100px;
+      }
     }
 
     button {
@@ -59,26 +91,33 @@ html {
       
     }
   }
-
-  .flower-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  .flowers-home {
-    width: 80%;
-    height:300px;
+  .flower1 {
+    display: none;
+    @media @desktop {
+      width: 250px;
     
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    }
+    
+  .flower-img {
+    width: 200px;
+    height: 150px;
   }
+
+  }
+  
 
   .top-section {
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     padding: 10px;
-    margin-top: 20px;
     border-bottom: 1px solid #787f84;
+
+      
 
       h3 {
         justify-content: center;
@@ -98,13 +137,51 @@ html {
     background-image: linear-gradient(to bottom right, #787f84, #dee7e1);
   }
 
+
+  .bottom-content {
+    @media @desktop {
+      width: 50%;
+    }
+  }
   .bottom-section {
     padding: 10px;
     margin-top: 20px;
+    
+
+    @media @desktop {
+      height: 300px;
+      }
+
+      .dead-flower{
+        display: none;
+
+        @media @desktop {
+          display: flex;
+         margin-left: 600px;
+         width: 50%;
+         margin-top: -215px;
+          
+          
+        }
+      }
+
+      .dead-flower-img {
+        @media @desktop {
+          width: 275px;
+          height: 250px;
+        }
+      }
 
     .bottom-buttons {
       display: flex;
       justify-content: space-around;
+
+      @media @desktop {
+        margin-top: 40px;
+        margin-left: -50px;
+        display: flex;
+      justify-content: space-evenly;
+      }
     }
 
       .bottom-btn {
@@ -125,8 +202,57 @@ html {
     }
       }
 
+      .users {
+        border-top: 1px solid #787f84;
+          @media @desktop {
+            
+          }
+      }
+
+      h3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+      }
+      .testimonials {
+        height: 400px;
+        padding: 10px;
+        
+
+
+        @media @desktop {
+        display: flex;
+        justify-content: wrap;
+        height: 250px;
+        padding: 10px;
+
+        }
+
+        .users {
+          display: none;
+
+          @media @desktop {
+            display: flex;
+            justify-content: flex-end;
+            width: 60px;
+            height: 60px;
+            border-radius: 90px;
+          }
+        }
+        
+        .review {
+          border-bottom: 1px dashed #787f84;
+          
+          @media @desktop {
+            width: 400px;
+            border-bottom: none; 
+        }
+      }
+      }
+    
     footer {
-      border-top: 1px solid #787f84;
+      // border-top: 1px solid #787f84;
       text-align: center;
       height: 50px;
     }
