@@ -9,6 +9,19 @@ header {
   display: flex;
   background-color: #dee7e1;
 }
+header h1 {
+  font-size: 30px;
+}
+header .menu-bar {
+  margin-left: 180px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+@media (min-width: 800px) {
+  header .menu-bar {
+    margin-left: 600px;
+  }
+}
 header nav {
   display: none;
 }
@@ -30,16 +43,6 @@ header nav {
 }
 header .flower-icon {
   margin-right: 20px;
-}
-header .menu-bar {
-  margin-left: 180px;
-  margin-top: 30px;
-  cursor: pointer;
-}
-@media (min-width: 800px) {
-  header .menu-bar {
-    display: none;
-  }
 }
 .pitch {
   background-color: #bbe5cb;
@@ -129,7 +132,7 @@ header .menu-bar {
     display: flex;
     margin-left: 600px;
     width: 50%;
-    margin-top: -215px;
+    margin-top: -200px;
   }
 }
 @media (min-width: 800px) {
