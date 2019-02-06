@@ -265,6 +265,22 @@ footer {
   text-align: center;
   height: 50px;
 }
+@media (min-width: 800px) {
+  .container-new {
+    display: flex;
+    justify-content: center;
+  }
+  .about {
+    width: 200px;
+    height: 250px;
+    border-radius: 40px;
+  }
+  .top-three {
+    display: flex;
+    margin-left: 500px;
+    flex-direction: column;
+  }
+}
 body {
   font-family: 'source sans pro', 'noto sans', sans-serif;
 }
