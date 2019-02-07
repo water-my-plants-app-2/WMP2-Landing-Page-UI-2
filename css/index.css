@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 html {
-  min-width: 500px;
   font-family: 'source sans pro';
 }
 @media (min-width: 800px) {
@@ -311,7 +310,6 @@ h5 {
   width: 200px;
   height: 150px;
   background-color: #bbe5cb;
-  border: 1px solid #787f84;
 }
 .menu li {
   list-style-type: none;
