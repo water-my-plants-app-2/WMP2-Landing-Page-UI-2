@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0.2rem;
+}
 html {
   font-family: 'source sans pro';
 }
@@ -14,9 +17,6 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: #dee7e1;
-}
-header h1 {
-  font-size: 30px;
 }
 @media (min-width: 800px) {
   header nav {
@@ -301,9 +301,8 @@ h5 {
 }
 .menu-button {
   cursor: pointer;
-  margin-left: 160px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .menu {
   display: none;
